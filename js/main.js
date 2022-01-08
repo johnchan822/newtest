@@ -27,7 +27,9 @@ $(document).ready(function () {
       }
     }
   };
-  includeHTML();
+  setTimeout(() => {
+    includeHTML();
+  }, 1);
 
 //漢堡選單
   $("body").on('click', '.header .ham', function (e) {
