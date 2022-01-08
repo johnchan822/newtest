@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.811" height="32.811" viewBox="0 0 32.811 32.811">
+  <defs>
+    <filter id="Path_594" x="14.192" y="14.16" width="18.618" height="18.651" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-opacity="0"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_4" x="0" y="0" width="27.438" height="27.511" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur-2"/>
+      <feFlood flood-opacity="0"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_446" data-name="Group 446" transform="translate(-255.082 134.045)">
+    <g transform="matrix(1, 0, 0, 1, 255.08, -134.05)" filter="url(#Path_594)">
+      <path id="Path_594-2" data-name="Path 594" d="M0,0,7.5,7.529" transform="translate(19.75 19.72)" fill="none" stroke="#118da1" stroke-linecap="round" stroke-width="1.5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 255.08, -134.05)" filter="url(#Ellipse_4)">
+      <ellipse id="Ellipse_4-2" data-name="Ellipse 4" cx="8.469" cy="8.505" rx="8.469" ry="8.505" transform="translate(5.25 5.25)" fill="none" stroke="#118da1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

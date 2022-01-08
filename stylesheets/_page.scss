@@ -1,0 +1,100 @@
+//index.html
+
+// #banner{
+//       position: relative;
+//       // height: 100vh;
+//   .swiper {
+//       width: 100%;
+//       height: 100%;
+//       .swiper-slide {
+//         width: 100%;
+//         padding-bottom: 50%;
+//         background-position: top;
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//       }
+
+//     .swiper-pagination-bullet{
+//       width: 288px;
+//       background: #FFFFFF;
+//       opacity: 0.3;
+//       border-radius: 6px;
+//     }
+//     .swiper-pagination-bullet-active{
+//       background: #C92F23;
+//       opacity: 1;
+//     }
+//     .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+//       top:75%;
+//     }
+//   }
+//   .swiper-content{
+//     .title{
+//       font-size: 20px;
+//     }
+//     color: #fff;
+//     position: absolute;
+//     bottom: 100px;
+//     left: 0;
+//     right: 0;
+//     z-index: 99;
+//     .col-md-3{
+//       &.active{
+//         color:red;
+//       }
+//     }
+//   }
+//   .banner-title{
+//     color: #fff;
+//     position: absolute;
+//     top: 30%;
+//     left: 0;
+//     right: 0;
+//     z-index: 99;
+//     h1{
+//       font-weight: bolder;
+//     }
+//     p{
+//       width: 90%;
+//     }
+//   }
+//   @media screen and(max-width:1024px) {
+//       .swiper {
+//         .swiper-pagination-bullet{
+//           max-width: 17%;
+//           background: #FFFFFF;
+//           opacity: 0.3;
+//           border-radius: 6px;
+
+//           }
+//       .swiper-pagination-bullet-active{
+//       background: #C92F23;
+//       opacity: 1;
+//     }
+//       }
+//       .swiper-content{
+//           color: #fff;
+//           position: absolute;
+//           bottom: 100px;
+//           left: 0;
+//           right: 0;
+//           z-index: 99;
+//           .col-md-3{
+//             display: none;
+//             &.active{
+//               display: block;
+//               color:red;
+//             }
+//           }
+//         }
+//   }
+// }
+
+// #detail-word{
+//   background-color: grey;
+//   .white-block{
+//     background-color:white;
+//     // max-width:1660px;
+  
+//   }
+// }
