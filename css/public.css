@@ -465,7 +465,7 @@ body {
 #index .banner .banner-title {
   color: #fff;
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 0;
   right: 0;
   z-index: 99;
@@ -1953,7 +1953,7 @@ body {
 
 #list table thead {
   background-color: #1A1A1A;
-  color: #fff;
+  color: #FAFAFA;
 }
 
 #list table thead th {
@@ -1968,8 +1968,12 @@ body {
   padding: 24px;
 }
 
+#list table tbody tr:nth-child(even) {
+  background-color: #FFFFFF;
+}
+
 #list table tbody tr:nth-child(odd) {
-  background-color: #e2e2e2;
+  background-color: #FAFAFA;
 }
 
 @media screen and (max-width: 1024px) {
@@ -2105,6 +2109,9 @@ body {
   display: flex;
   padding: 25px  30px;
   border-bottom: 2px solid #808080a1;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 #poster .column-title .up {
@@ -2151,6 +2158,7 @@ body {
 }
 
 #poster .line-border {
+  display: none;
   border-bottom: 2px solid #808080a1;
 }
 

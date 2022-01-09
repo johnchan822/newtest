@@ -354,7 +354,7 @@ font-weight: bolder;
     .banner-title{
       color: #fff;
       position: absolute;
-      top: 25%;
+      top: 20%;
       left: 0;
       right: 0;
       z-index: 99;
@@ -1648,7 +1648,7 @@ font-weight: bolder;
     width: 100%;
     thead{
       background-color: #1A1A1A;
-      color: #fff;
+      color: #FAFAFA;
       th{
         padding: 22px;
       }
@@ -1658,8 +1658,11 @@ font-weight: bolder;
       td{
         padding: 24px;
       }
+      tr:nth-child(even){
+          background-color:#FFFFFF;
+      }
       tr:nth-child(odd){
-          background-color:rgb(226, 226, 226);
+          background-color:#FAFAFA;
       }
     }
   }
@@ -1780,6 +1783,7 @@ font-weight: bolder;
     display: flex;
     padding: 25px  30px;
     border-bottom: 2px solid #808080a1;
+    align-items: baseline;
     .up{
       filter: grayscale(100%);
       transform: rotate(180deg);
@@ -1811,6 +1815,7 @@ font-weight: bolder;
     // display: none;
   }
   .line-border{
+    display: none;
      border-bottom: 2px solid #808080a1;
   }
   @media screen and(max-width:768px) {
