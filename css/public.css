@@ -430,6 +430,25 @@ body {
   transition: .3s;
 }
 
+#index .line-style {
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+  left: 0;
+}
+
+#index .line-style-b {
+  position: absolute;
+  right: 0;
+  top: 41%;
+}
+
+@media screen and (max-width: 1440px) {
+  #index .line-style, #index .line-style-b {
+    display: none;
+  }
+}
+
 #index .banner {
   position: relative;
 }
@@ -465,7 +484,7 @@ body {
 #index .banner .banner-title {
   color: #fff;
   position: absolute;
-  top: 20%;
+  top: 18%;
   left: 0;
   right: 0;
   z-index: 99;
@@ -670,6 +689,11 @@ body {
   background-color: #fafafa;
 }
 
+#index .refresh-bar .container {
+  position: relative;
+  z-index: 4;
+}
+
 #index .refresh-bar .container .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -754,6 +778,7 @@ body {
 }
 
 #index .upcoming-game {
+  position: relative;
   background-color: #F3F3F3;
 }
 
@@ -1139,7 +1164,7 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: -15%;
+  margin-top: -16%;
   padding-bottom: 10%;
   position: relative;
 }
@@ -1285,7 +1310,7 @@ body {
     overflow-x: auto;
   }
   #cloud-stats .table-contest .table-overflow table {
-    width: 800px;
+    width: 600px;
   }
 }
 
@@ -1471,7 +1496,10 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
-  #smart-gym .bg-gym .red-block {
+  #smart-gym .bg-gym .recording-system .container .w800 .record-content {
+    width: 100% !important;
+  }
+  #smart-gym .bg-gym .recording-system .red-block {
     display: none !important;
   }
 }
@@ -1788,7 +1816,7 @@ body {
 #about .bg .w1200 {
   max-width: 1200px;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
 }
 
 #about .bg .w1200 .row {
@@ -1813,6 +1841,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  #about .bg .w1600 .about-title {
+    padding: 43px 4%;
+  }
   #about .bg .w1600 h1 {
     font-size: 26px;
   }
@@ -1831,6 +1862,9 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  #about h5 {
+    font-size: 18px !important;
+  }
   #about .bg .w1600 .time-line .title::before {
     left: 63.5%;
   }
@@ -2163,6 +2197,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  #poster .column-title {
+    margin: 0 auto;
+    padding: 6px;
+  }
   #poster .column-title .title {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
@@ -2170,9 +2208,10 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    width: 90%;
+    width: 95%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding: 0;
   }
   #poster .column-title .title h4 {
     font-size: 22px;

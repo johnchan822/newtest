@@ -32,7 +32,6 @@ $(document).ready(function () {
 //漢堡選單
   $("body").on('click', '.header .ham', function (e) {
    e.preventDefault();
-   console.log('asdf')
     $('.menu').toggleClass('active');
   });
 
@@ -44,7 +43,7 @@ $(document).ready(function () {
       clickable: true,
     },
     autoplay: {
-      delay: 5000,
+      delay: 6000,
       disableOnInteraction: false,
     },
     on: {
@@ -65,7 +64,7 @@ $(document).ready(function () {
     allowTouchMove: true,
     autoplay: true,
     autoplay: {
-      delay: 1000,
+      delay: 3000,
       disableOnInteraction: false,
     },
     breakpoints: {

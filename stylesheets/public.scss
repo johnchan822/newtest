@@ -13,7 +13,6 @@ font-weight: bolder;
   color: #FFFFFF;
 }
 
-
 //共同HEADER FOOTER 按鈕
 
 .header{
@@ -326,6 +325,23 @@ font-weight: bolder;
 
 //INDEX首頁
 #index{
+  .line-style{
+  position: absolute;
+    top: 38%;
+    z-index: 1;
+    left: 0;
+  }
+  .line-style-b{
+    position: absolute;
+    right: 0;
+    top: 41%;
+  }
+
+  @media screen and(max-width:1440px) {
+     .line-style, .line-style-b{
+      display: none;
+     }
+  }
   .banner{
     position: relative;
     .swiper{
@@ -354,7 +370,7 @@ font-weight: bolder;
     .banner-title{
       color: #fff;
       position: absolute;
-      top: 20%;
+      top: 18%;
       left: 0;
       right: 0;
       z-index: 99;
@@ -546,6 +562,8 @@ font-weight: bolder;
   .refresh-bar{
     background-color: rgb(250, 250, 250);
     .container{
+      position: relative;
+      z-index: 4;
       .row{
         display: flex;
         justify-content: space-between;
@@ -608,6 +626,7 @@ font-weight: bolder;
     }
   }
   .upcoming-game{
+    position: relative;
     background-color: #F3F3F3;
     h1{
       text-align: center;
@@ -904,7 +923,7 @@ font-weight: bolder;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: -15%;
+    margin-top: -16%;
     padding-bottom: 10%;
     position: relative;
     .bg-row{
@@ -968,7 +987,7 @@ font-weight: bolder;
           }
        }
      }
-  }
+    }
   }
   .table-compare{
     background-color:#E5E5E5;
@@ -1023,7 +1042,7 @@ font-weight: bolder;
       font-size: 16px;
       overflow-x: auto;
       table{
-        width: 800px;
+        width: 600px;
       }
     }
   }
@@ -1205,8 +1224,17 @@ font-weight: bolder;
     }
     }
     @media screen and(max-width:1024px) {
-      .red-block{
-        display: none!important;
+      .recording-system{
+        .container{
+          .w800{
+            .record-content{
+              width: 100%!important;
+            }
+          }
+        }
+        .red-block{
+          display: none!important;
+        }
       }
     }
   }
@@ -1487,7 +1515,7 @@ font-weight: bolder;
     .w1200{
       max-width: 1200px;
       margin: 0 auto;
-      width: 90%;
+      width: 100%;
       .row{
         line-height: 150%;
         letter-spacing: 0.1em;
@@ -1516,6 +1544,9 @@ font-weight: bolder;
   @media screen  and(max-width:768px){
     .bg{
       .w1600{
+        .about-title{
+          padding: 43px 4%;
+        }
         h1{
           font-size: 26px;
         }
@@ -1537,6 +1568,9 @@ font-weight: bolder;
     }
   }
   @media screen  and(max-width:480px){
+      h5{
+      font-size: 18px!important;
+    }
     .bg{
       .w1600{
         .time-line{
@@ -1811,20 +1845,21 @@ font-weight: bolder;
   .container{
     line-height: 150%;
     letter-spacing: 0.1em;
-    // border-bottom: 2px solid #808080a1;
-    // display: none;
   }
   .line-border{
     display: none;
-     border-bottom: 2px solid #808080a1;
+    border-bottom: 2px solid #808080a1;
   }
   @media screen and(max-width:768px) {
     .column-title{
+      margin: 0 auto;
+      padding: 6px;
       .title{
         align-items: baseline;
         justify-content:flex-start;
-        width: 90%;
+        width: 95%;
         flex-wrap: wrap;
+        padding: 0;
         h4{
           font-size: 22px;
           margin:  6px;
