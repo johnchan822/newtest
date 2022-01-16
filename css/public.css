@@ -1277,12 +1277,46 @@ body {
   padding: 24px 24px 0px 24px;
 }
 
-@media screen and (max-width: 800px) {
-  #cloud-stats .table-compare .table-overflow {
-    overflow-x: auto;
+@media screen and (max-width: 600px) {
+  #cloud-stats .table-compare .container table tbody td {
+    padding: 0px;
   }
-  #cloud-stats .table-compare .table-overflow table {
-    width: 800px;
+  #cloud-stats .table-compare table {
+    width: 100% !important;
+  }
+  #cloud-stats .table-compare table thead {
+    display: none;
+  }
+  #cloud-stats .table-compare table tr {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+  }
+  #cloud-stats .table-compare table td {
+    font-size: 20px;
+    width: 100%;
+    margin: 2px;
+    text-align: left !important;
+    font-size: 18px !important;
+  }
+  #cloud-stats .table-compare table td::before {
+    content: attr(data-th);
+    display: block;
+    width: 200px;
+    background-color: #C92F23;
+    color: #fff;
+    text-align: center;
+    float: left;
+    margin-right: 5px;
+  }
+  #cloud-stats .table-compare table td {
+    display: block;
+    width: 100%;
+    padding: 3px 0;
+    text-align: left;
+  }
+  #cloud-stats .table-compare table td > span {
+    width: calc(100% - 100px) !important;
   }
 }
 
@@ -1305,12 +1339,45 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-  #cloud-stats .table-contest .table-overflow {
-    font-size: 16px;
-    overflow-x: auto;
+  #cloud-stats .table-contest .container table tbody td {
+    padding: 0px;
   }
-  #cloud-stats .table-contest .table-overflow table {
-    width: 600px;
+  #cloud-stats .table-contest table {
+    width: 100% !important;
+  }
+  #cloud-stats .table-contest table thead {
+    display: none;
+  }
+  #cloud-stats .table-contest table tr {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+  }
+  #cloud-stats .table-contest table td {
+    font-size: 20px;
+    width: 100%;
+    margin: 2px;
+    text-align: left !important;
+    font-size: 18px !important;
+  }
+  #cloud-stats .table-contest table td::before {
+    content: attr(data-th);
+    display: block;
+    width: 200px;
+    background-color: #C92F23;
+    color: #fff;
+    text-align: center;
+    float: left;
+    margin-right: 5px;
+  }
+  #cloud-stats .table-contest table td {
+    display: block;
+    width: 100%;
+    padding: 3px 0;
+    text-align: left;
+  }
+  #cloud-stats .table-contest table td > span {
+    width: calc(100% - 100px) !important;
   }
 }
 
@@ -2010,12 +2077,46 @@ body {
   background-color: #FAFAFA;
 }
 
-@media screen and (max-width: 1024px) {
-  #list .table-overflow {
-    overflow-x: auto;
+@media screen and (max-width: 600px) {
+  #list .container table tbody td {
+    padding: 0px;
   }
-  #list .table-overflow table {
-    width: 800px;
+  #list table {
+    width: 100% !important;
+  }
+  #list table thead {
+    display: none;
+  }
+  #list table tr {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+  }
+  #list table td {
+    font-size: 20px;
+    width: 100%;
+    margin: 2px;
+    text-align: left !important;
+    font-size: 18px !important;
+  }
+  #list table td::before {
+    content: attr(data-th);
+    display: block;
+    width: 100px;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    float: left;
+    margin-right: 10px;
+  }
+  #list table td {
+    display: block;
+    width: 100%;
+    padding: 3px 0;
+    text-align: left;
+  }
+  #list table td > span {
+    width: calc(100% - 100px) !important;
   }
 }
 

@@ -1012,15 +1012,49 @@ font-weight: bolder;
         }
       }
     }
-    @media screen and(max-width:800px) {
-    .table-overflow{
-         overflow-x: auto;
+    @media screen and(max-width:600px) {
+      .container table tbody td{
+        padding: 0px;
+      }
       table{
-        width: 800px;
+        width: 100%!important;
+      }
+      table thead {
+        display: none;
+      }
+      table tr {
+        display: inline-block;
+        padding: 10px 0;
+        width: 100%;
+      }
+      table td{
+        font-size: 20px;
+        width: 100%;
+        margin: 2px;
+        text-align: left!important;
+        font-size: 18px!important;
+      }
+      table td::before {
+        content: attr(data-th);
+        display: block;
+        width: 200px;
+        background-color: #C92F23;
+        color: #fff;
+        text-align: center;
+        float: left;
+        margin-right: 5px;
+      }
+      table td {
+        display: block;
+        width: 100%;
+        padding: 3px 0;
+        text-align: left;
+      }
+      table td >span {
+        width: calc(100% - 100px) !important;
       }
     }
-  }
-  }
+}
   .table-contest{
       color: #fff;
     .container{
@@ -1038,13 +1072,46 @@ font-weight: bolder;
       }
     }
   @media screen and(max-width:800px) {
-    .table-overflow{
-      font-size: 16px;
-      overflow-x: auto;
-      table{
-        width: 600px;
+        .container table tbody td{
+        padding: 0px;
       }
-    }
+      table{
+        width: 100%!important;
+      }
+      table thead {
+        display: none;
+      }
+      table tr {
+        display: inline-block;
+        padding: 10px 0;
+        width: 100%;
+      }
+      table td{
+        font-size: 20px;
+        width: 100%;
+        margin: 2px;
+        text-align: left!important;
+        font-size: 18px!important;
+      }
+      table td::before {
+        content: attr(data-th);
+        display: block;
+        width: 200px;
+        background-color: #C92F23;
+        color: #fff;
+        text-align: center;
+        float: left;
+        margin-right: 5px;
+      }
+      table td {
+        display: block;
+        width: 100%;
+        padding: 3px 0;
+        text-align: left;
+      }
+      table td >span {
+        width: calc(100% - 100px) !important;
+      }
   }
   }
   .plan-selection{  
@@ -1700,14 +1767,48 @@ font-weight: bolder;
       }
     }
   }
-  @media screen and(max-width:1024px){
-    .table-overflow{
-      overflow-x: auto;
+   @media screen and(max-width:600px) {
+      .container table tbody td{
+        padding: 0px;
+      }
       table{
-        width: 800px;
+        width: 100%!important;
+      }
+      table thead {
+        display: none;
+      }
+      table tr {
+        display: inline-block;
+        padding: 10px 0;
+        width: 100%;
+      }
+      table td{
+        font-size: 20px;
+        width: 100%;
+        margin: 2px;
+        text-align: left!important;
+        font-size: 18px!important;
+      }
+      table td::before {
+        content: attr(data-th);
+        display: block;
+        width: 100px;
+        background-color: #000000;
+        color: #fff;
+        text-align: center;
+        float: left;
+        margin-right: 10px;
+      }
+      table td {
+        display: block;
+        width: 100%;
+        padding: 3px 0;
+        text-align: left;
+      }
+      table td >span {
+        width: calc(100% - 100px) !important;
       }
     }
-  }
 }
 
 
